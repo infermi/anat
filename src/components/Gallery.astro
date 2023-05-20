@@ -1,0 +1,76 @@
+---
+const GALLARYPATH = "/anat/gallery/";
+
+const GALLAYIMAGES = Array.from({ length: 21 }, (_, i) => i + 1);
+---
+
+<div class="-z-10 grid grid-cols-2 gap-4 md:grid-cols-4" id="gallery">
+  <div class="grid gap-4">
+    {
+      GALLAYIMAGES.slice(0, GALLAYIMAGES.length / 4).map((image) => (
+        <div class="">
+          <img
+            src={GALLARYPATH + image + ".jpg"}
+            data-aos="fade-up"
+            loading="lazy"
+            alt=""
+            class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+          />
+        </div>
+      ))
+    }
+  </div>
+  <div class="grid gap-4">
+    {
+      GALLAYIMAGES.slice(GALLAYIMAGES.length / 4, GALLAYIMAGES.length / 2).map(
+        (image) => (
+          <div class="">
+            <img
+              src={GALLARYPATH + image + ".jpg"}
+              loading="lazy"
+              data-aos="fade-up"
+              alt=""
+              class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+            />
+          </div>
+        )
+      )
+    }
+  </div>
+  <div class="grid gap-4">
+    {
+      GALLAYIMAGES.slice(
+        GALLAYIMAGES.length / 2,
+        (GALLAYIMAGES.length / 4) * 3
+      ).map((image) => (
+        <div class="">
+          <img
+            src={GALLARYPATH + image + ".jpg"}
+            loading="lazy"
+            alt=""
+            data-aos="fade-up"
+            class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+          />
+        </div>
+      ))
+    }
+  </div>
+  <div class="grid gap-4">
+    {
+      GALLAYIMAGES.slice(
+        (GALLAYIMAGES.length / 4) * 3,
+        GALLAYIMAGES.length
+      ).map((image) => (
+        <div class="">
+          <img
+            src={GALLARYPATH + image + ".jpg"}
+            loading="lazy"
+            alt=""
+            data-aos="fade-up"
+            class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+          />
+        </div>
+      ))
+    }
+  </div>
+</div>

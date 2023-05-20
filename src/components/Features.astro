@@ -1,0 +1,164 @@
+---
+
+const services = [
+  {
+    title: "צילום זוגות",
+    text: `צילום האהבה והחיבור בין שני אנשים בתמונות יפות ומרגשות שאפשר להסתכל עליהם שנים אחרי`,
+    link:"https://photos.app.goo.gl/hBUqWbCaXjTy96Zk8",
+    icon: "heart",
+  },
+  {
+    title: "צילום נשי",
+    text: `סשן צילום מחזק ומעלה בטחון לנשים שחוגג את היופי הנשי
+    `,
+    link:"https://photos.app.goo.gl/nwuQLtR4d2GGaq6FA",
+    icon: "female",
+  },
+  {
+    title: "צילום הריון",
+    text: `צילום המסע היפה של ההריון עם תמונות אומנותיות בלתי נשכחות
+    `,
+    link:"https://photos.app.goo.gl/hpBhBubVFV5SBos66",
+    icon: "baby",
+  },
+  {
+    title: "צילום בני שנה",
+    text: `אלבום תמונות ששומר את השנה הראשונה של הילד שלכם
+    `,
+    link:"https://photos.app.goo.gl/xRsmEJH7j5pvHGK3A",
+    icon: "book",
+  },
+  {
+    title:"צילום לכיתה א" ,
+    text:`צילום תמונות להתחלה של הדרך של בית הספר היסודי` ,
+    link:"https://photos.app.goo.gl/BJrkrevYQctFfwwh6" ,
+    icon:"graduation-cap"
+  },
+  {
+    title: "צילומי דורות",
+    text: `צילום החיבור והאהבה במשפחה בין הדורות השונים בתמונות משמעותיות ויפות
+    `,
+    link:"https://photos.app.goo.gl/4qSUKpsHEg4Mpos68",
+    icon: "users",
+  },
+  {
+    title: "בוק בר/בת מצווה",
+    text: `אלבום תמונות יפה ומרגש שמנציח את תחילת גיל הנעורים והארוע המיוחד
+    `,
+    link:"https://photos.app.goo.gl/cnQKhHHmk7WFYCL3A",
+    icon: "star-of-david",
+  },
+
+  {
+    title: "ארועים עסקיים",
+    text: `צילום מקצועי לפגישות עסקיות וכנסים כדי לתעד את הרגעים החשובים האלו
+    `,
+    link:"https://photos.app.goo.gl/H7AQU6w5vFpfsVad7",
+    icon: "briefcase",
+  },
+
+  {
+    title: "ארועים משפחתים",
+    text: `צילום ארועים משפחתיים ורגעים שמחים ומרגשים שאפשר להסתכל עליהם אחרי שנים
+  `,
+  link:"https://photos.app.goo.gl/FxUP7wbdxnFZznUN6",
+    icon: "home",
+  },
+
+  {
+    title: "תמונות תדמית",
+    text: `צילום תמונת תדמית מקצועית 
+  `,
+  link:"https://photos.app.goo.gl/C4xk6zJPcsvW4myq5",
+    icon: "user-circle",
+  },
+
+  
+];
+---
+
+<section
+  id="services"
+  class="section relative bg-white pt-10 pb-8 md:pt-16 md:pb-0"
+>
+  <div class="container mx-auto px-4 xl:max-w-6xl">
+    <!-- Heading start -->
+    <header class="mx-auto mb-12 text-center lg:px-20">
+      <h2 class="mb-2 text-5xl lg:text-7xl font-bold font-varela leading-normal text-black">
+        מה אני מציעה
+      </h2>
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 100 60"
+        style="margin: 0 auto;height: 35px;"
+        xml:space="preserve"
+      >
+        <circle
+          cx="50.1"
+          cy="30.4"
+          r="5"
+          class="stroke-primary"
+          style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"
+        ></circle>
+        <line
+          x1="55.1"
+          y1="30.4"
+          x2="100"
+          y2="30.4"
+          class="stroke-primary"
+          style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+        <line
+          x1="45.1"
+          y1="30.4"
+          x2="0"
+          y2="30.4"
+          class="stroke-primary"
+          style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+      </svg>
+      <p class="mx-auto pb-2 text-xl font-varela font-light leading-relaxed text-gray-500">
+        שמרו את הרגעים החשובים בחיים עם צילום מהלב
+      </p>
+    </header>
+    <!-- End heading -->
+    <!-- row -->
+    <div class="-mx-4 flex flex-row flex-wrap text-center">
+      {
+        services.map((service) => (
+        <div
+        class="  w-full max-w-full flex-shrink px-4 sm:w-1/2 lg:w-1/3 lg:px-6"
+        data-aos="fade-up"
+        data-aos-duration="1s"
+        data-aos-delay=".3s"
+        style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;"
+      >
+        <!-- service block -->
+        <div
+          class="mb-12 transform border-b border-gray-100 bg-gray-50 py-8 px-12 transition duration-300 ease-in-out hover:-translate-y-2"
+        >
+          <div class="mb-4 inline-block text-gray-900">
+            <!-- icon -->
+            <i class={`fa-solid fa-${service.icon}`}></i>
+          </div>
+          <h3 class="mb-2 text-lg font-semibold font-heebo leading-normal text-black">
+            {service.title}
+          </h3>
+          <p class="text-gray-500">
+            {service.text}
+          </p>
+          <a href={service.link} class="text-blue-500 hover:text-blue-600">ראה דוגמאות &larr;</a>
+        </div>
+        <!-- end service block -->
+      </div>
+        ))
+      }
+      
+      
+      
+    </div>
+    <!-- end row -->
+  </div>
+</section>
