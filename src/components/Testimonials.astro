@@ -1,0 +1,127 @@
+---
+---
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+<div>
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="swiper-container !overflow-hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <div class="text-sm">
+                <p class="font-medium"></p>
+              </div>
+            </div>
+
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
+
+              ענת הגיעה לצלם חבורת בנות תוססת בגיל 11, על חוף הים, בשעת בין
+              ערביים ושקיעה. קודם כל, היה כיף ענקי! <br />
+              ענת זרמה לחלוטין עם הבנות, נכנסה ממש לתוך המים, צילמה אותן בהרבה זויות,
+              משחקי אור צל ושקיעה. נהנינו מאוד, כולנו, והתוצאות יצאו נפלאות!  <br
+              />
+              תודה ענקית
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <div class="text-sm">
+                <p class="font-medium">אילנה פישר שטמלר</p>
+              </div>
+            </div>
+
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
+              ענת צילמה את תמונות הבוק לקראת בת המצווה של בתי. ענת היא חמה, רגישה
+              לרצונות הלקוחה, מקצועית ומוכשרת ברמות! התמונות מדהימות, והבוק יצא מושלם!
+              לא יכולנו לבקש חוויה ותוצאות יותר טובות! כל מי שיבחר בענת לאירוע שלהם
+              יזכה ובגדול!
+
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
+        </div>
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <div class="text-sm">
+                <p class="font-medium">יעל מטר</p>
+              </div>
+            </div>
+
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
+
+              הזמנו את ענת לצילומי משפחה לחגיגות השבעים של ההורים. <br />
+              נפגשנו בטבע והיה כיף ענקי. <br />
+              ענת הייתה מלאת סבלנות ואנרגיות טובות. בחיוך גדול היא עברה איתנו בין
+              מיקומים, דאגה לצילומים בהרכבים שונים ועם אביזרים שונים, והתוצאה הייתה
+              נפלאה. גם חוויה נהדרת וגם תוצרים מוצלחים ממש.  ממליצים בחום.
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
+        </div>
+        <div class="swiper-slide">
+          <blockquote class="bg-gray-100 p-8">
+            <div class="flex items-center gap-4">
+              <div class="text-sm">
+                <p class="font-medium"></p>
+              </div>
+            </div>
+
+            <p class="relative mt-4 text-gray-500">
+              <span class="text-xl">&ldquo;</span>
+
+              ענת ניהלה את פרויקט צילום הבת מצווה של בתנו במקצועית ורגישות. ענת
+              ליוותה הפיקה וצילמה בסבלנות וכישרון אדיר,תוך שאפשרה לנטע להרגיש
+              ביטחון. לאורך היום והתהליך ענת העצימה את נטע , בדגש על חוויה
+              וירידה לפרטים הקטנים. זה היה סאשן צילומים שלא תשכח. ענת היתה
+              מקצועית ואיכותית. והתמונות- מדהימות וישארו לה כמזכרת לשלב וזמן
+              בחיים. אני ממליצה מאוד כי ענת גרמה לנטע להרגיש כוכבת והוציאה
+              תמונות וזוויות אנושיות יפות ומופלאות. באמת מתנה לכל החיים . אפרת
+              דור אמא שקבלה בת מאושרת שרק מבקשת למצוא תירוץ לעוד יום צילומים .
+
+              <span class="text-xl">&rdquo;</span>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="swiper-pagination !relative !bottom-0 mt-12"></div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".swiper-container", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 8,
+      autoplay: {
+        delay: 8000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  });
+</script>

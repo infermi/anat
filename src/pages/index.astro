@@ -6,6 +6,7 @@ import Contact from "../components/Contact.astro";
 import Devider from "../components/Devider.astro";
 //@ts-ignore
 import Gallery from "../components/Gallery.astro";
+import Testimonials from "../components/Testimonials.astro";
 ---
 
 <Layout title="ענת">
@@ -100,7 +101,7 @@ import Gallery from "../components/Gallery.astro";
             class="max-h-96 overflow-hidden md:h-screen md:max-h-full md:overflow-visible"
           >
             <img
-              class="w-full object-cover object-center md:h-screen"
+              class="max-h-56 w-full object-cover object-[50%_40%] md:h-screen md:max-h-full md:object-center"
               src="/anat/us.jpg"
               alt=""
             />
@@ -244,6 +245,14 @@ import Gallery from "../components/Gallery.astro";
       </div>
     </section>
     <!--  -->
+
+    <Devider />
+    <section>
+      <h1 class="font-heebo text-5xl font-bold">
+        לקוחות <span class="text-rose-600">מרוצים</span>
+      </h1>
+      <Testimonials />
+    </section>
 
     <Devider />
 
